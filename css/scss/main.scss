@@ -239,6 +239,10 @@ $font_TimesNewRoman: "TimesNewRoman", PS-BoldItalicMT, AdobeInvisFont,
       flex-wrap: wrap;
       justify-content: center;
 
+      .cuisinesGalleryItems:hover {
+        transform: scale(1.01);
+      }
+
       .cuisinesGalleryItems {
         width: 19rem;
         height: 14rem;

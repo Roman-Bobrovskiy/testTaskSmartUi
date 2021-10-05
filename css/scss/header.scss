@@ -16,10 +16,7 @@ $font_Lato: "Lato", AdobeInvisFont, MyriadPro-Regular;
       width: 6rem;
     }
   }
-  .headerMenuLogInBtn,
-  .headerMenuSignInBtn {
-    display: none;
-  }
+
   //headerBurgerMenuBtn========================================
   .headerBurgerMenuBtn {
     display: flex;
@@ -35,6 +32,9 @@ $font_Lato: "Lato", AdobeInvisFont, MyriadPro-Regular;
     cursor: pointer;
     background-color: transparent;
   }
+  .headerBurgerMenuBtn:hover {
+    transform: scale(1.05);
+  }
   .headerBurgerMenuBtnSpan,
   .headerBurgerMenuBtnSpan::before,
   .headerBurgerMenuBtnSpan::after {
@@ -42,6 +42,7 @@ $font_Lato: "Lato", AdobeInvisFont, MyriadPro-Regular;
     width: 14px;
     height: 3px;
     background-color: white;
+    overflow: visible;
   }
   .headerBurgerMenuBtnSpan::before {
     display: block;
@@ -252,7 +253,14 @@ $font_Lato: "Lato", AdobeInvisFont, MyriadPro-Regular;
         font-size: 14px;
         cursor: pointer;
       }
+      li > .headerMenuLogInBtn:hover {
+        text-shadow: 0px 0px 3px #ffffff;
+      }
+      li > .headerMenuSignInBtn:hover {
+        text-shadow: 0px 0px 3px #ffffff;
+      }
     }
+
     .headerBurgerMenuBtn {
       position: static;
     }
@@ -264,6 +272,13 @@ $font_Lato: "Lato", AdobeInvisFont, MyriadPro-Regular;
     max-width: 1600px;
     justify-content: space-between;
     align-items: center;
+
+    li > .headerMenuLogInBtn:hover {
+      text-shadow: 0px 0px 3px #ffffff;
+    }
+    li > .headerMenuSignInBtn:hover {
+      text-shadow: 0px 0px 3px #ffffff;
+    }
     .headerLogoContainer {
       width: 68px;
       margin: 21px 209px;
@@ -287,6 +302,12 @@ $font_Lato: "Lato", AdobeInvisFont, MyriadPro-Regular;
         color: white;
         font-size: 14px;
         cursor: pointer;
+      }
+      li > .headerMenuLogInBtn:hover {
+        text-shadow: 0px 0px 3px #ffffff;
+      }
+      li > .headerMenuSignInBtn:hover {
+        text-shadow: 0px 0px 3px #ffffff;
       }
     }
     .headerBurgerMenuBtn {
@@ -325,6 +346,12 @@ $font_Lato: "Lato", AdobeInvisFont, MyriadPro-Regular;
         font-size: 14px;
         cursor: pointer;
       }
+      li > .headerMenuLogInBtn:hover {
+        text-shadow: 0px 0px 3px #ffffff;
+      }
+      li > .headerMenuSignInBtn:hover {
+        text-shadow: 0px 0px 3px #ffffff;
+      }
     }
     .headerBurgerMenuBtn {
       position: static;
@@ -349,6 +376,12 @@ $font_Lato: "Lato", AdobeInvisFont, MyriadPro-Regular;
       font-size: 14px;
       font-weight: 700;
       cursor: pointer;
+    }
+    li > .headerMenuLogInBtn:hover {
+      text-shadow: 0px 0px 3px #f69679;
+    }
+    li > .headerMenuSignInBtn:hover {
+      text-shadow: 0px 0px 3px #f69679;
     }
     //Burger (min-width: 768px) and (max-width: 991px)=====================
     .headerBurgerMenuBtn {
@@ -384,6 +417,12 @@ $font_Lato: "Lato", AdobeInvisFont, MyriadPro-Regular;
       font-size: 14px;
       font-weight: 700;
       cursor: pointer;
+    }
+    li > .headerMenuLogInBtn:hover {
+      text-shadow: 0px 0px 3px #f69679;
+    }
+    li > .headerMenuSignInBtn:hover {
+      text-shadow: 0px 0px 3px #f69679;
     }
     //Burger (min-width: 768px) ==========================================
     .headerBurgerMenuBtn {
