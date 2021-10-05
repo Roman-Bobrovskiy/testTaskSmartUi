@@ -49,6 +49,7 @@
   border: 0;
   cursor: pointer;
   background-color: transparent;
+  overflow: hidden;
 }
 
 .wrapHeader .headerBurgerMenuBtn:hover {
@@ -63,7 +64,6 @@
   width: 14px;
   height: 3px;
   background-color: white;
-  overflow: visible;
 }
 
 .wrapHeader .headerBurgerMenuBtnSpan::before {
@@ -85,13 +85,13 @@
   top: 0;
   right: -300px;
   z-index: 1100;
-  width: 250px;
+  width: 300px;
   height: 100vh;
   -webkit-transform: translate3d(0px, 0px, 0px);
           transform: translate3d(0px, 0px, 0px);
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-  background-color: #908c8cd1;
+  background-color: #202020d1;
   margin-top: 0;
 }
 
@@ -115,6 +115,10 @@
   text-decoration: none;
   color: white;
   margin: auto 1rem;
+}
+
+.wrapHeader .burgerMenu .burgerMenuItems > a:hover {
+  text-shadow: 0px 0px 3px #ffffff;
 }
 
 .menuCancelBtn {
