@@ -67,10 +67,10 @@ let ticking = false;
 
 //sort
 let sortArr = () => {
-  if (arrImages.length > 5) {
+
     arrImages.sort((a, b) => {
       return a.num - b.num;
-    });
+  
   }
 };
 
