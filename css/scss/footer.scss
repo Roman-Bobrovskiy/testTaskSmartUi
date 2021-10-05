@@ -1,0 +1,35 @@
+$font_Lato: "Lato", AdobeInvisFont, MyriadPro-Regular;
+.wrapFooter {
+  background-color: #f7f7f7;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  margin-bottom: 0;
+  height: 93px;
+  .footerTextRights {
+    font-family: $font_Lato;
+    font-size: 14pt;
+    color: rgba(139, 139, 139, 255);
+  }
+  .footerTextDesign {
+    font-family: $font_Lato;
+    font-size: 14pt;
+    color: rgba(139, 139, 139, 255);
+    .footerTextDesignSpan {
+      font-weight: 600;
+      color: black;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .wrapFooter {
+    flex-direction: column;
+    .footerTextRights {
+      transform: scale(0.8);
+    }
+    .footerTextDesign {
+      transform: scale(0.8);
+    }
+  }
+}

@@ -1,0 +1,585 @@
+$font_Lato: "Lato", AdobeInvisFont, MyriadPro-Regular;
+$font_TimesNewRoman: "TimesNewRoman", PS-BoldItalicMT, AdobeInvisFont,
+  MyriadPro-Regular;
+
+.wrapMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  //section mainGetStarted===========================================================
+  .mainGetStarted {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 30rem;
+    background: url(../../img/mainGetStartedBG.png) center center no-repeat;
+    background-size: cover;
+    .mainGetStartedContainer {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      max-width: 12rem;
+      .getStartedText {
+        font-family: $font_TimesNewRoman;
+        font-style: italic;
+        font-size: 1.2rem;
+        color: rgba(255, 255, 255, 0.7);
+        .getStartedSpanText {
+          font-family: $font_Lato;
+          font-style: normal;
+          font-size: 3.2rem;
+          font-weight: 600;
+          color: rgba(255, 255, 255, 255);
+        }
+      }
+      .getStartedBtn {
+        border: 0;
+        background: #f69679;
+        width: 9rem;
+        height: 2.75rem;
+        border-radius: 3px;
+        margin: 0 auto;
+        font-family: $font_Lato;
+        font-size: 0.9rem;
+        color: white;
+        cursor: pointer;
+      }
+      .getStartedTextSendRecipes {
+        font-family: $font_Lato;
+        font-size: 0.45rem;
+        color: white;
+        .getStartedSpanLink > a {
+          font-family: $font_Lato;
+          font-size: 0.45rem;
+          text-decoration: underline;
+          color: white;
+          font-weight: 600;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  //section mainGetWay===================================================================
+
+  .mainGetWay {
+    background-color: white;
+    .mainGetWayContainer {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+
+      .getWayItemsInspired::before {
+        content: "";
+        display: flex;
+        margin: 0 auto;
+        width: 107px;
+        height: 107px;
+        background: url(../../img/Composed_INSPIRED.png) center center no-repeat;
+      }
+      .getWayItemsRewarded::before {
+        content: "";
+        display: flex;
+        margin: 0 auto;
+        width: 107px;
+        height: 107px;
+        background: url(../../img/Composed_REWARDED.png) center center no-repeat;
+      }
+      .getWayItemsSocial::before {
+        content: "";
+        display: flex;
+        margin: 0 auto;
+        width: 107px;
+        height: 107px;
+        background: url(../../img/Composed_SOCIAL.png) center center no-repeat;
+      }
+      .getWayItems {
+        margin: 0 auto;
+        width: 16rem;
+        .getWayItemsHeading {
+          font-family: $font_Lato;
+          font-size: 18px;
+          font-weight: 600;
+          color: rgba(0, 0, 0, 255);
+          text-align: center;
+          margin-bottom: 10px;
+        }
+        .getWayItemsText {
+          font-family: $font_Lato;
+          font-size: 16px;
+          font-weight: 300;
+          color: rgba(0, 0, 0, 255);
+          text-align: center;
+          margin-top: 0;
+        }
+      }
+      .getWayItemsText::before {
+        content: "";
+        display: flex;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #f57365;
+        width: 88px;
+        height: 1px;
+      }
+    }
+  }
+
+  //section mainIntroducing ===========================================================
+
+  .mainIntroducing {
+    background-color: #f7f7f7;
+    display: flex;
+    width: 100%;
+    .mainIntroducingImgContainer {
+      width: 50%;
+      .ihponeImg {
+        height: 100%;
+      }
+    }
+    .mainIntroducingAside {
+      width: 50%;
+      margin: 180px auto;
+      .introducingAsideHeading {
+        font-family: $font_Lato;
+        font-size: 18px;
+        color: rgba(0, 0, 0, 255);
+        text-align: left;
+      }
+      .introducingAsideHeading::after {
+        content: "";
+        display: flex;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #f57365;
+        width: 88px;
+        height: 1px;
+      }
+      .introducingAsideText {
+        font-family: $font_Lato;
+        font-size: 16px;
+        font-weight: 300;
+        color: rgba(0, 0, 0, 255);
+        text-align: left;
+      }
+    }
+  }
+
+  //section mainBaner ============================================================
+
+  .mainBaner {
+    width: 100%;
+    height: 29rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: url(../../img/banerBG.png) #4a3949 center bottom no-repeat;
+    text-align: center;
+    .wrapMainBaner {
+      width: 55rem;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      margin: 0 auto;
+      .mainBanerWrapImg {
+        width: 7rem;
+        margin: 0 auto;
+      }
+      .banerText {
+        font-family: $font_Lato;
+        font-size: 30px;
+        font-weight: 200;
+        color: rgba(255, 255, 255, 255);
+      }
+      .banerTextSignature {
+        font-family: $font_Lato;
+        font-size: 16px;
+        font-weight: 200;
+        color: rgba(255, 255, 255, 255);
+      }
+    }
+  }
+
+  //section mainCuisines ============================================================
+
+  .mainCuisines {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    .mainCuisinesHeading {
+      font-family: $font_Lato;
+      font-size: 18pt;
+      font-weight: 600;
+      color: rgba(0, 0, 0, 255);
+      margin-top: 100px;
+      margin-bottom: 40px;
+    }
+    .mainCuisinesHeading::after {
+      content: "";
+      display: flex;
+      margin: 0 auto;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #f57365;
+      width: 88px;
+      height: 1px;
+    }
+
+    //cuisinesGallery======================================================
+
+    .cuisinesGallery {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .cuisinesGalleryItems {
+        width: 19rem;
+        height: 14rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+
+        .cuisinesGalleryItemsNumber {
+          color: white;
+          font-family: $font_TimesNewRoman;
+          font-size: 16pt;
+          cursor: pointer;
+        }
+        .cuisinesGalleryItemsName {
+          font-size: 30pt;
+          font-family: $font_Lato;
+          color: white;
+          cursor: pointer;
+        }
+      }
+    }
+
+    //cuisinesCounter=========================================
+
+    .wrapCuisinesCounter {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      width: 90%;
+      margin: 0 auto;
+
+      .cuisinesCounterItems {
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+        margin: 30px auto;
+
+        .cuisinesCounterNumber {
+          font-family: $font_Lato;
+          font-size: 36pt;
+          font-weight: 600;
+          color: rgba(0, 0, 0, 255);
+        }
+        .cuisinesCounterText {
+          font-family: $font_Lato;
+          font-size: 16px;
+          font-weight: 300;
+          color: rgba(0, 0, 0, 255);
+        }
+      }
+    }
+  }
+}
+
+//min-width: 1600px==================================================================================
+
+@media (min-width: 1600px) {
+  .wrapMain {
+    width: 1600px;
+    .mainGetStarted {
+      width: 100%;
+      height: 880px;
+      .mainGetStartedContainer {
+        max-width: 415px;
+        .getStartedText {
+          font-size: 36px;
+          .getStartedSpanText {
+            font-size: 100px;
+          }
+        }
+        .getStartedBtn {
+          width: 280px;
+          height: 68px;
+          border-radius: 3px;
+          font-size: 28px;
+          margin-bottom: 40px;
+        }
+        .getStartedTextSendRecipes {
+          font-size: 14px;
+          .getStartedSpanLink > a {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    //section mainGetWay min-width: 1600px ===========================================================
+
+    .mainGetWay {
+      background-color: white;
+      .mainGetWayContainer {
+        width: 1180px;
+        margin: 100px auto;
+        flex-direction: row;
+        justify-content: space-between;
+        .getWayItems {
+          margin: 0 auto;
+          width: 360px;
+        }
+      }
+    }
+  }
+
+  //section mainIntroducing min-width: 1600px=========================================================
+
+  .mainIntroducing {
+    background-color: #f7f7f7;
+    display: flex;
+    width: 100%;
+    .mainIntroducingImgContainer {
+      margin: 100px 0 0 200px;
+      width: 50%;
+      display: block;
+    }
+    .mainIntroducingAside {
+      margin: 180px auto;
+      .introducingAsideTextContainer {
+        width: 540px;
+        margin-bottom: 29px;
+      }
+    }
+  }
+
+  //section mainCuisines min-width: 1600px=============================================================
+
+  .wrapCuisinesCounter {
+    flex-direction: row !important;
+  }
+}
+
+//(min-width: 1200px) and (max-width: 1600px)==========================================================
+
+@media (min-width: 1200px) and (max-width: 1600px) {
+  .wrapMain {
+    max-width: 1600px;
+    .mainGetStarted {
+      width: 100%;
+      height: 880px;
+      .mainGetStartedContainer {
+        max-width: 415px;
+        .getStartedText {
+          font-size: 36px;
+          .getStartedSpanText {
+            font-size: 100px;
+          }
+        }
+        .getStartedBtn {
+          width: 280px;
+          height: 68px;
+          border-radius: 3px;
+          font-size: 28px;
+          margin-bottom: 40px;
+        }
+        .getStartedTextSendRecipes {
+          font-size: 14px;
+
+          .getStartedSpanLink > a {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    //mainGetWay (min-width: 1200px) and (max-width: 1600px)==============================================
+
+    .mainGetWay {
+      background-color: white;
+      .mainGetWayContainer {
+        width: 1180px;
+        margin: 100px auto;
+        flex-direction: row;
+        justify-content: space-between;
+        .getWayItems {
+          margin: 0 auto;
+          width: 360px;
+        }
+      }
+    }
+  }
+
+  //mainIntroducing (min-width: 1200px) and (max-width: 1600px)==============================================
+
+  .mainIntroducingAside {
+    margin: 180px 2rem !important;
+  }
+  .mainIntroducingImgContainer {
+    margin: 50px 0 0 100px;
+  }
+  .introducingAsideTextContainer {
+    width: 540px;
+  }
+
+  //section mainCuisines (min-width: 1200px) and (max-width: 1600px)====================================
+
+  .wrapCuisinesCounter {
+    flex-direction: row !important;
+  }
+}
+
+//(min-width: 992px) and (max-width: 1199px)============================================================
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .wrapMain {
+    //mainGetWay (min-width: 992px) and (max-width: 1199px)========================================
+
+    .mainGetWay {
+      background-color: white;
+      .mainGetWayContainer {
+        max-width: 1000px;
+        margin: 100px auto;
+        flex-direction: row;
+        justify-content: space-between;
+        .getWayItems {
+          margin: 0 auto;
+          width: 300px;
+        }
+      }
+    }
+
+    //mainIntroducing (min-width: 992px) and (max-width: 1199px)========================================
+
+    .mainIntroducing {
+      height: 40rem;
+      .mainIntroducingImgContainer {
+        transform: scale(0.7);
+        justify-content: center;
+        .ihponeImg {
+          height: fit-content;
+        }
+      }
+      .mainIntroducingAside {
+        justify-content: center;
+      }
+    }
+  }
+
+  //mainCuisines (min-width: 992px) and (max-width: 1199px)============================================================
+
+  .wrapCuisinesCounter {
+    flex-direction: row !important;
+
+    .cuisinesCounterNumber {
+      font-size: 30pt !important;
+    }
+    .cuisinesCounterText {
+      font-size: 16px !important;
+    }
+  }
+}
+//(min-width: 768px) and (max-width: 991px)=============================================
+@media (min-width: 768px) and (max-width: 991px) {
+  //mainIntroducing (min-width: 768px) and (max-width: 991px)========================================
+
+  .mainIntroducingImgContainer {
+    display: none;
+  }
+  .mainIntroducingAside {
+    margin: 1rem auto !important;
+
+    .introducingAsideHeading {
+      text-align: center !important;
+    }
+
+    .introducingAsideHeading::after {
+      margin: 0 auto;
+    }
+    .introducingAsideTextContainer {
+      text-align: center !important;
+      .introducingAsideText {
+        text-align: center !important;
+      }
+    }
+    .introducingAsideBtn {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+
+  //MainBaner (min-width: 768px) and (max-width: 991px)========================================
+
+  .wrapMainBaner {
+    width: 70% !important;
+  }
+  .banerText {
+    font-size: 1.3rem !important;
+  }
+
+  //section mainCuisines (min-width: 768px) and (max-width: 991px)============================================================
+
+  .wrapCuisinesCounter {
+    flex-direction: row !important;
+    width: 90% !important;
+
+    .cuisinesCounterNumber {
+      font-size: 23pt !important;
+    }
+    .cuisinesCounterText {
+      font-size: 16px !important;
+    }
+  }
+}
+
+//(max-width: 767px)==============================================================================
+@media (max-width: 767px) {
+  //mainIntroducing (min-width: 768px) ============================================================
+
+  .mainIntroducingImgContainer {
+    display: none;
+  }
+  .mainIntroducingAside {
+    margin: 1rem auto !important;
+    width: 90% !important;
+
+    .introducingAsideHeading {
+      text-align: center !important;
+    }
+
+    .introducingAsideHeading::after {
+      margin: 0 auto;
+    }
+    .introducingAsideTextContainer {
+      text-align: center !important;
+      .introducingAsideText {
+        text-align: center !important;
+      }
+    }
+    .introducingAsideBtn {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+  //mainBaner  (min-width: 768px) ============================================================
+  .wrapMainBaner {
+    width: 90% !important;
+  }
+  .banerText {
+    font-size: 1.3rem !important;
+  }
+  .cuisinesCounterItems {
+    margin: 0.5rem auto !important;
+  }
+}

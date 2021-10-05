@@ -1,0 +1,52 @@
+.wrapFooter {
+  background-color: #f7f7f7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 0;
+  height: 93px;
+}
+
+.wrapFooter .footerTextRights {
+  font-family: "Lato", AdobeInvisFont, MyriadPro-Regular;
+  font-size: 14pt;
+  color: #8b8b8b;
+}
+
+.wrapFooter .footerTextDesign {
+  font-family: "Lato", AdobeInvisFont, MyriadPro-Regular;
+  font-size: 14pt;
+  color: #8b8b8b;
+}
+
+.wrapFooter .footerTextDesign .footerTextDesignSpan {
+  font-weight: 600;
+  color: black;
+}
+
+@media (max-width: 767px) {
+  .wrapFooter {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .wrapFooter .footerTextRights {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  .wrapFooter .footerTextDesign {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+}
+/*# sourceMappingURL=footer.css.map */

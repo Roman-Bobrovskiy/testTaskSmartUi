@@ -1,0 +1,670 @@
+.wrapMain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.wrapMain .mainGetStarted {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 30rem;
+  background: url(../../img/mainGetStartedBG.png) center center no-repeat;
+  background-size: cover;
+}
+
+.wrapMain .mainGetStarted .mainGetStartedContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  max-width: 12rem;
+}
+
+.wrapMain .mainGetStarted .mainGetStartedContainer .getStartedText {
+  font-family: "TimesNewRoman", PS-BoldItalicMT, AdobeInvisFont, MyriadPro-Regular;
+  font-style: italic;
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.wrapMain .mainGetStarted .mainGetStartedContainer .getStartedText .getStartedSpanText {
+  font-family: "Lato", AdobeInvisFont, MyriadPro-Regular;
+  font-style: normal;
+  font-size: 3.2rem;
+  font-weight: 600;
+  color: white;
+}
+
+.wrapMain .mainGetStarted .mainGetStartedContainer .getStartedBtn {
+  border: 0;
+  background: #f69679;
+  width: 9rem;
+  height: 2.75rem;
+  border-radius: 3px;
+  margin: 0 auto;
+  font-family: "Lato", AdobeInvisFont, MyriadPro-Regular;
+  font-size: 0.9rem;
+  color: white;
+  cursor: pointer;
+}
+
+.wrapMain .mainGetStarted .mainGetStartedContainer .getStartedTextSendRecipes {
+  font-family: "Lato", AdobeInvisFont, MyriadPro-Regular;
+  font-size: 0.45rem;
+  color: white;
+}
+
+.wrapMain .mainGetStarted .mainGetStartedContainer .getStartedTextSendRecipes .getStartedSpanLink > a {
+  font-family: "Lato", AdobeInvisFont, MyriadPro-Regular;
+  font-size: 0.45rem;
+  text-decoration: underline;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.wrapMain .mainGetWay {
+  background-color: white;
+}
+
+.wrapMain .mainGetWay .mainGetWayContainer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.wrapMain .mainGetWay .mainGetWayContainer .getWayItemsInspired::before {
+  content: "";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  width: 107px;
+  height: 107px;
+  background: url(../../img/Composed_INSPIRED.png) center center no-repeat;
+}
+
+.wrapMain .mainGetWay .mainGetWayContainer .getWayItemsRewarded::before {
+  content: "";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  width: 107px;
+  height: 107px;
+  background: url(../../img/Composed_REWARDED.png) center center no-repeat;
+}
+
+.wrapMain .mainGetWay .mainGetWayContainer .getWayItemsSocial::before {
+  content: "";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  width: 107px;
+  height: 107px;
+  background: url(../../img/Composed_SOCIAL.png) center center no-repeat;
+}
+
+.wrapMain .mainGetWay .mainGetWayContainer .getWayItems {
+  margin: 0 auto;
+  width: 16rem;
+}
+
+.wrapMain .mainGetWay .mainGetWayContainer .getWayItems .getWayItemsHeading {
+  font-family: "Lato", AdobeInvisFont, MyriadPro-Regular;
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.wrapMain .mainGetWay .mainGetWayContainer .getWayItems .getWayItemsText {
+  font-family: "Lato", AdobeInvisFont, MyriadPro-Regular;
+  font-size: 16px;
+  font-weight: 300;
+  color: black;
+  text-align: center;
+  margin-top: 0;
+}
+
+.wrapMain .mainGetWay .mainGetWayContainer .getWayItemsText::before {
+  content: "";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #f57365;
+  width: 88px;
+  height: 1px;
+}
+
+.wrapMain .mainIntroducing {
+  background-color: #f7f7f7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.wrapMain .mainIntroducing .mainIntroducingImgContainer {
+  width: 50%;
+}
+
+.wrapMain .mainIntroducing .mainIntroducingImgContainer .ihponeImg {
+  height: 100%;
+}
+
+.wrapMain .mainIntroducing .mainIntroducingAside {
+  width: 50%;
+  margin: 180px auto;
+}
+
+.wrapMain .mainIntroducing .mainIntroducingAside .introducingAsideHeading {
+  font-family: "Lato", AdobeInvisFont, MyriadPro-Regular;
+  font-size: 18px;
+  color: black;
+  text-align: left;
+}
+
+.wrapMain .mainIntroducing .mainIntroducingAside .introducingAsideHeading::after {
+  content: "";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #f57365;
+  width: 88px;
+  height: 1px;
+}
+
+.wrapMain .mainIntroducing .mainIntroducingAside .introducingAsideText {
+  font-family: "Lato", AdobeInvisFont, MyriadPro-Regular;
+  font-size: 16px;
+  font-weight: 300;
+  color: black;
+  text-align: left;
+}
+
+.wrapMain .mainBaner {
+  width: 100%;
+  height: 29rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: url(../../img/banerBG.png) #4a3949 center bottom no-repeat;
+  text-align: center;
+}
+
+.wrapMain .mainBaner .wrapMainBaner {
+  width: 55rem;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+}
+
+.wrapMain .mainBaner .wrapMainBaner .mainBanerWrapImg {
+  width: 7rem;
+  margin: 0 auto;
+}
+
+.wrapMain .mainBaner .wrapMainBaner .banerText {
+  font-family: "Lato", AdobeInvisFont, MyriadPro-Regular;
+  font-size: 30px;
+  font-weight: 200;
+  color: white;
+}
+
+.wrapMain .mainBaner .wrapMainBaner .banerTextSignature {
+  font-family: "Lato", AdobeInvisFont, MyriadPro-Regular;
+  font-size: 16px;
+  font-weight: 200;
+  color: white;
+}
+
+.wrapMain .mainCuisines {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  text-align: center;
+}
+
+.wrapMain .mainCuisines .mainCuisinesHeading {
+  font-family: "Lato", AdobeInvisFont, MyriadPro-Regular;
+  font-size: 18pt;
+  font-weight: 600;
+  color: black;
+  margin-top: 100px;
+  margin-bottom: 40px;
+}
+
+.wrapMain .mainCuisines .mainCuisinesHeading::after {
+  content: "";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #f57365;
+  width: 88px;
+  height: 1px;
+}
+
+.wrapMain .mainCuisines .cuisinesGallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrapMain .mainCuisines .cuisinesGallery .cuisinesGalleryItems {
+  width: 19rem;
+  height: 14rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+}
+
+.wrapMain .mainCuisines .cuisinesGallery .cuisinesGalleryItems .cuisinesGalleryItemsNumber {
+  color: white;
+  font-family: "TimesNewRoman", PS-BoldItalicMT, AdobeInvisFont, MyriadPro-Regular;
+  font-size: 16pt;
+  cursor: pointer;
+}
+
+.wrapMain .mainCuisines .cuisinesGallery .cuisinesGalleryItems .cuisinesGalleryItemsName {
+  font-size: 30pt;
+  font-family: "Lato", AdobeInvisFont, MyriadPro-Regular;
+  color: white;
+  cursor: pointer;
+}
+
+.wrapMain .mainCuisines .wrapCuisinesCounter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.wrapMain .mainCuisines .wrapCuisinesCounter .cuisinesCounterItems {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  padding-bottom: 1rem;
+  margin: 30px auto;
+}
+
+.wrapMain .mainCuisines .wrapCuisinesCounter .cuisinesCounterItems .cuisinesCounterNumber {
+  font-family: "Lato", AdobeInvisFont, MyriadPro-Regular;
+  font-size: 36pt;
+  font-weight: 600;
+  color: black;
+}
+
+.wrapMain .mainCuisines .wrapCuisinesCounter .cuisinesCounterItems .cuisinesCounterText {
+  font-family: "Lato", AdobeInvisFont, MyriadPro-Regular;
+  font-size: 16px;
+  font-weight: 300;
+  color: black;
+}
+
+@media (min-width: 1600px) {
+  .wrapMain {
+    width: 1600px;
+  }
+  .wrapMain .mainGetStarted {
+    width: 100%;
+    height: 880px;
+  }
+  .wrapMain .mainGetStarted .mainGetStartedContainer {
+    max-width: 415px;
+  }
+  .wrapMain .mainGetStarted .mainGetStartedContainer .getStartedText {
+    font-size: 36px;
+  }
+  .wrapMain .mainGetStarted .mainGetStartedContainer .getStartedText .getStartedSpanText {
+    font-size: 100px;
+  }
+  .wrapMain .mainGetStarted .mainGetStartedContainer .getStartedBtn {
+    width: 280px;
+    height: 68px;
+    border-radius: 3px;
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+  .wrapMain .mainGetStarted .mainGetStartedContainer .getStartedTextSendRecipes {
+    font-size: 14px;
+  }
+  .wrapMain .mainGetStarted .mainGetStartedContainer .getStartedTextSendRecipes .getStartedSpanLink > a {
+    font-size: 14px;
+  }
+  .wrapMain .mainGetWay {
+    background-color: white;
+  }
+  .wrapMain .mainGetWay .mainGetWayContainer {
+    width: 1180px;
+    margin: 100px auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .wrapMain .mainGetWay .mainGetWayContainer .getWayItems {
+    margin: 0 auto;
+    width: 360px;
+  }
+  .mainIntroducing {
+    background-color: #f7f7f7;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+  }
+  .mainIntroducing .mainIntroducingImgContainer {
+    margin: 100px 0 0 200px;
+    width: 50%;
+    display: block;
+  }
+  .mainIntroducing .mainIntroducingAside {
+    margin: 180px auto;
+  }
+  .mainIntroducing .mainIntroducingAside .introducingAsideTextContainer {
+    width: 540px;
+    margin-bottom: 29px;
+  }
+  .wrapCuisinesCounter {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1600px) {
+  .wrapMain {
+    max-width: 1600px;
+  }
+  .wrapMain .mainGetStarted {
+    width: 100%;
+    height: 880px;
+  }
+  .wrapMain .mainGetStarted .mainGetStartedContainer {
+    max-width: 415px;
+  }
+  .wrapMain .mainGetStarted .mainGetStartedContainer .getStartedText {
+    font-size: 36px;
+  }
+  .wrapMain .mainGetStarted .mainGetStartedContainer .getStartedText .getStartedSpanText {
+    font-size: 100px;
+  }
+  .wrapMain .mainGetStarted .mainGetStartedContainer .getStartedBtn {
+    width: 280px;
+    height: 68px;
+    border-radius: 3px;
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+  .wrapMain .mainGetStarted .mainGetStartedContainer .getStartedTextSendRecipes {
+    font-size: 14px;
+  }
+  .wrapMain .mainGetStarted .mainGetStartedContainer .getStartedTextSendRecipes .getStartedSpanLink > a {
+    font-size: 14px;
+  }
+  .wrapMain .mainGetWay {
+    background-color: white;
+  }
+  .wrapMain .mainGetWay .mainGetWayContainer {
+    width: 1180px;
+    margin: 100px auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .wrapMain .mainGetWay .mainGetWayContainer .getWayItems {
+    margin: 0 auto;
+    width: 360px;
+  }
+  .mainIntroducingAside {
+    margin: 180px 2rem !important;
+  }
+  .mainIntroducingImgContainer {
+    margin: 50px 0 0 100px;
+  }
+  .introducingAsideTextContainer {
+    width: 540px;
+  }
+  .wrapCuisinesCounter {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .wrapMain .mainGetWay {
+    background-color: white;
+  }
+  .wrapMain .mainGetWay .mainGetWayContainer {
+    max-width: 1000px;
+    margin: 100px auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .wrapMain .mainGetWay .mainGetWayContainer .getWayItems {
+    margin: 0 auto;
+    width: 300px;
+  }
+  .wrapMain .mainIntroducing {
+    height: 40rem;
+  }
+  .wrapMain .mainIntroducing .mainIntroducingImgContainer {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .wrapMain .mainIntroducing .mainIntroducingImgContainer .ihponeImg {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .wrapMain .mainIntroducing .mainIntroducingAside {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .wrapCuisinesCounter {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+  }
+  .wrapCuisinesCounter .cuisinesCounterNumber {
+    font-size: 30pt !important;
+  }
+  .wrapCuisinesCounter .cuisinesCounterText {
+    font-size: 16px !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .mainIntroducingImgContainer {
+    display: none;
+  }
+  .mainIntroducingAside {
+    margin: 1rem auto !important;
+  }
+  .mainIntroducingAside .introducingAsideHeading {
+    text-align: center !important;
+  }
+  .mainIntroducingAside .introducingAsideHeading::after {
+    margin: 0 auto;
+  }
+  .mainIntroducingAside .introducingAsideTextContainer {
+    text-align: center !important;
+  }
+  .mainIntroducingAside .introducingAsideTextContainer .introducingAsideText {
+    text-align: center !important;
+  }
+  .mainIntroducingAside .introducingAsideBtn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .wrapMainBaner {
+    width: 70% !important;
+  }
+  .banerText {
+    font-size: 1.3rem !important;
+  }
+  .wrapCuisinesCounter {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+    width: 90% !important;
+  }
+  .wrapCuisinesCounter .cuisinesCounterNumber {
+    font-size: 23pt !important;
+  }
+  .wrapCuisinesCounter .cuisinesCounterText {
+    font-size: 16px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .mainIntroducingImgContainer {
+    display: none;
+  }
+  .mainIntroducingAside {
+    margin: 1rem auto !important;
+    width: 90% !important;
+  }
+  .mainIntroducingAside .introducingAsideHeading {
+    text-align: center !important;
+  }
+  .mainIntroducingAside .introducingAsideHeading::after {
+    margin: 0 auto;
+  }
+  .mainIntroducingAside .introducingAsideTextContainer {
+    text-align: center !important;
+  }
+  .mainIntroducingAside .introducingAsideTextContainer .introducingAsideText {
+    text-align: center !important;
+  }
+  .mainIntroducingAside .introducingAsideBtn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .wrapMainBaner {
+    width: 90% !important;
+  }
+  .banerText {
+    font-size: 1.3rem !important;
+  }
+  .cuisinesCounterItems {
+    margin: 0.5rem auto !important;
+  }
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normolize.css">
+    <link rel="stylesheet" href="./css/scss/header.css">
+    <link rel="stylesheet" href="./css/scss/main.css">
+    <link rel="stylesheet" href="./css/scss/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <title>testTaskSmartUi</title>
+</head>
+
+<body>
+    <header>
+        <div class="wrapHeader">
+            <!-- Logo -->
+            <div class="headerLogoContainer">
+                <a href="./">
+                    <img class="headerLogo" src="./img/logo.png" alt="logo" />
+                </a>
+            </div>
+            <!-- Login/signin menu -->
+            <ul class="headerLogInMenu">
+                <li><button type="button" class="headerMenuLogInBtn">LOG IN</button> </li>
+                <li><button type="button" class="headerMenuSignInBtn">SIGN IN</button> </li>
+                <li><button type="button" class="headerBurgerMenuBtn">
+                        <span class="headerBurgerMenuBtnSpan"></span>
+                    </button>
+                </li>
+            </ul>
+            <!-- Burger menu -->
+            <ul class="burgerMenu">
+                <li><button class="burgerMenuCloseBtn" type="button"></button></li>
+                <li class="burgerMenuItems"><a href="#">Home</a></li>
+                <li class="burgerMenuItems"><a href="#">About</a></li>
+                <li class="burgerMenuItems"><a href="#">Cuisines</a></li>
+            </ul>
+        </div>
+        <!-- modalLogIn -->
+        <form class="modalLogIn" action="/">
+            <div class="backdrop">
+                <button class="menuCancelBtn" type="button"></button>
+                <div class="logInMenuLogoContainer">
+                    <img src="./img/logo.png" alt="logo" />
+                </div>
+
+                <div class="inputContainer">
+                    <input class="logInMenuInput" type="text" placeholder="Enter Username" name="uname" required>
+                    <input class="logInMenuInput" type="password" placeholder="Enter Password" name="psw" required>
+                    <button class="menuSubmitLoginBtn" type="submit">LOGIN</button>
+                    <span class="psw">Forgot <a href="#">password?</a></span><br>
+                </div>
+            </div>
+        </form>
+
+        <!-- modalSignIn -->
+        <form class="modalSignIn" action="/">
+            <div class="backdropSignIn">
+                <button class="menuSignInCancelBtn" type="button"></button>
+                <div class="signMenuLogoContainer">
+                    <img src="./img/logo.png" alt="logo" />
+                </div>
+
+                <div class="inputContainer">
+                    <input class="signInMenuInput" type="text" placeholder="Enter Username" name="uname" required>
+                    <input class="signInMenuInput" type="email" placeholder="Enter Email" name="uname" required>
+                    <input class="signInMenuInput" type="password" placeholder="Enter Password" name="psw" required>
+                    <button class="headerMenuSignInBtn" type="submit">LOGIN</button>
+                    <span class="psw">Forgot <a href="#">password?</a></span><br>
+                </div>
+            </div>
+        </form>
+    </header>
+
+    <!-- main ========================== -->
+
+    <main>
+        <div class="wrapMain">
+
+            <!-- GetStarted -->
+
+            <section class="mainGetStarted">
+                <div class="mainGetStartedContainer">
+                    <p class="getStartedText">Find your Favorite <span class="getStartedSpanText">RECIPES</span> </p>
+                    <button type="button" class="getStartedBtn">GET STARTED</button>
+                    <p class="getStartedTextSendRecipes">OR SEND US YOUR OWN RECIPES AND <span
+                            class="getStartedSpanLink"> <a href="/">GET REWARDED!</a> </span></p>
+                </div>
+            </section>
+
+            <!-- GetWay -->
+
+            <section class="mainGetWay">
+                <ul class="mainGetWayContainer">
+                    <li class="getWayItems getWayItemsInspired">
+                        <p class="getWayItemsHeading">GET INSPIRED</p>
+                        <p class="getWayItemsText">Lorem ipsum dolor sit amet, consectetur adipisc
+                            Pellentesque vel enim a elit viverra elementuma.
+                            Aliquam erat volutpat. </p>
+                    </li>
+                    <li class="getWayItems getWayItemsRewarded">
+                        <p class="getWayItemsHeading">GET REWARDED</p>
+                        <p class="getWayItemsText">Lorem ipsum dolor sit amet, consectetur adipisc
+                            Pellentesque vel enim a elit viverra elementuma.
+                            Aliquam erat volutpat. </p>
+                    </li>
+                    <li class="getWayItems getWayItemsSocial">
+                        <p class="getWayItemsHeading">GET SOCIAL</p>
+                        <p class="getWayItemsText">Lorem ipsum dolor sit amet, consectetur adipisc
+                            Pellentesque vel enim a elit viverra elementuma.
+                            Aliquam erat volutpat. </p>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Introducing -->
+
+            <section class="mainIntroducing">
+                <div class="mainIntroducingImgContainer">
+                    <img class="ihponeImg" src="./img/iphone.png" alt="iphone">
+                </div>
+                <aside class="mainIntroducingAside">
+                    <div class="introducingAsideTextContainer">
+                        <span class="introducingAsideHeading">INTRODUCING THE FUDI APP</span>
+                        <p class="introducingAsideText">Morbi eget posuere dolor. Pellentesque cursus aliquet aliquet.
+                            Aeneanet
+                            felis sit amet diam mollis ullamcorper. Nullam consequat sem a ante vest
+                            ibulum tristique. Suspendisse tristique lacus ac mattis porta.</p>
+
+                        <p class="introducingAsideText">Vivamus ligula quam, vehicula non lacinia sed, faucibus sit amet
+                            libero. In
+                            libero dui, eleifend eu nisi id, egestas fringilla odio. In varius quam a mas
+                            sa hendrerit ullamcorper a eu justo. Suspendisse porta mattis convallis.
+                            Aenean tempus ligula ac odio rhoncus, quis aliquam dolor accumsan.</p>
+
+                        <p class="introducingAsideText">Suspendisse aliquet felis consectetur libero congue, sed
+                            pulvinar
+                            diam
+                            malesuada. Duis vehicula a nibh id hendrerit. Donec sit amet ultrices
+                            ante, a mattis massa. </p>
+                    </div>
+                    <div class="introducingAsideBtn">
+                        <a href="/"><img src="./img/appStore.png" alt="appStore.png"></a>
+                        <a href="/"><img src="./img/googlePlay.png" alt="googlePlay.png"></a>
+                    </div>
+                </aside>
+            </section>
+
+            <!-- mainBaner -->
+
+            <section class="mainBaner">
+                <div class="wrapMainBaner">
+                    <div class="mainBanerWrapImg">
+                        <img class="banerImg" src="./img/banerPhoto.png" alt="banerPhoto.png">
+                    </div>
+                    <p class="banerText">“I am so happy because I found this recipe, and it just made my life easier.
+                        Thanks so much for sharing!”
+                    </p>
+                    <p class="banerTextSignature">- Michael Dawson, San Francisco, CA -</p>
+                </div>
+            </section>
+
+            <!-- mainCuisines -->
+
+            <section class="mainCuisines">
+                <span class="mainCuisinesHeading">BROWSE BY CUISINES</span>
+                <ul class="cuisinesGallery"></ul>
+                <ul class="wrapCuisinesCounter"></ul>
+            </section>
+        </div>
+    </main>
+
+    <!-- footer ======================-->
+
+    <footer>
+        <ul class="wrapFooter">
+            <li class="footerTextRights">©2014 Fudi. All Rights Reserved.</li>
+            <li class="footerTextDesign">DESIGN BY: <span class="footerTextDesignSpan">WWW.BEKADES.COM</span></li>
+        </ul>
+    </footer>
+</body>
+
+<script src="./js/Counter.js" type="module"></script>
+<script src="./js/Cuisines.js" type="module"></script>
+<script src="./js/Login.js" type="module"></script>
+<script src="./js/Signin.js" type="module"></script>
+<script src="./js/BurgerMenu.js" type="module"></script>
+
+</html>

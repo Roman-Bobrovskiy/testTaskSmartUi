@@ -1,0 +1,524 @@
+.wrapHeader {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  background: transparent;
+  position: absolute;
+}
+
+.wrapHeader .headerLogoContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin-top: 3rem;
+}
+
+.wrapHeader .headerLogoContainer .headerLogo {
+  width: 6rem;
+}
+
+.wrapHeader .headerMenuLogInBtn,
+.wrapHeader .headerMenuSignInBtn {
+  display: none;
+}
+
+.wrapHeader .headerBurgerMenuBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  top: 39px;
+  width: 26px;
+  height: 26px;
+  z-index: 1;
+  outline: none;
+  border: 0;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.wrapHeader .headerBurgerMenuBtnSpan,
+.wrapHeader .headerBurgerMenuBtnSpan::before,
+.wrapHeader .headerBurgerMenuBtnSpan::after {
+  position: absolute;
+  width: 14px;
+  height: 3px;
+  background-color: white;
+}
+
+.wrapHeader .headerBurgerMenuBtnSpan::before {
+  display: block;
+  content: "";
+  top: -5px;
+  cursor: pointer;
+}
+
+.wrapHeader .headerBurgerMenuBtnSpan::after {
+  display: block;
+  content: "";
+  top: 5px;
+  cursor: pointer;
+}
+
+.wrapHeader .burgerMenu {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  z-index: 1100;
+  width: 250px;
+  height: 100vh;
+  -webkit-transform: translate3d(0px, 0px, 0px);
+          transform: translate3d(0px, 0px, 0px);
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  background-color: #908c8cd1;
+  margin-top: 0;
+}
+
+.wrapHeader .burgerMenu .burgerMenuCloseBtn {
+  outline: none;
+  border: 0;
+  background: url(../../img/Cancel_Icon.svg) center center no-repeat;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+.wrapHeader .burgerMenu .burgerMenuItems {
+  margin: 1rem auto;
+}
+
+.wrapHeader .burgerMenu .burgerMenuItems > a {
+  font-family: "Lato", AdobeInvisFont, MyriadPro-Regular;
+  text-decoration: none;
+  color: white;
+  margin: auto 1rem;
+}
+
+.menuCancelBtn {
+  outline: none;
+  border: 0;
+  background: url(../../img/Cancel_Icon.svg) center center no-repeat;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  margin: 2rem;
+}
+
+.modalLogIn {
+  display: none;
+  position: absolute;
+  width: 50%;
+  left: 25%;
+  top: 25%;
+  z-index: 1000;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+  font-family: "Lato", AdobeInvisFont, MyriadPro-Regular;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.modalLogIn .backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -100;
+}
+
+.modalLogIn .logInMenuLogoContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.modalLogIn .inputContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 20%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.modalLogIn .inputContainer .logInMenuInput {
+  margin: 0.5rem;
+}
+
+.modalLogIn .inputContainer .menuSubmitLoginBtn {
+  outline: none;
+  border: 0;
+  background: transparent;
+  color: white;
+  font-family: "Lato", AdobeInvisFont, MyriadPro-Regular;
+  font-size: 20px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.modalLogIn .inputContainer .psw > a {
+  color: white;
+  font-family: "Lato", AdobeInvisFont, MyriadPro-Regular;
+  font-size: 14px;
+}
+
+.menuSignInCancelBtn {
+  outline: none;
+  border: 0;
+  background: url(../../img/Cancel_Icon.svg) center center no-repeat;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  margin: 2rem;
+}
+
+.modalSignIn {
+  display: none;
+  display: none;
+  position: absolute;
+  width: 50%;
+  left: 25%;
+  top: 25%;
+  z-index: 1000;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+  font-family: "Lato", AdobeInvisFont, MyriadPro-Regular;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.modalSignIn .backdropSignIn {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -100;
+}
+
+.modalSignIn .signMenuLogoContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.modalSignIn .inputContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 20%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.modalSignIn .inputContainer .signInMenuInput {
+  margin: 0.5rem;
+}
+
+.modalSignIn .inputContainer .headerMenuSignInBtn {
+  outline: none;
+  border: 0;
+  background: transparent;
+  color: white;
+  font-family: "Lato", AdobeInvisFont, MyriadPro-Regular;
+  font-size: 20px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.modalSignIn .inputContainer .psw > a {
+  color: white;
+  font-family: "Lato", AdobeInvisFont, MyriadPro-Regular;
+  font-size: 14px;
+}
+
+@media (min-width: 1600px) {
+  .wrapHeader {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 1600px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .wrapHeader .headerLogoContainer {
+    width: 68px;
+    margin: 21px 209px;
+  }
+  .wrapHeader .headerLogoContainer .headerLogo {
+    width: 100%;
+  }
+  .wrapHeader .headerLogInMenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-right: 266px;
+  }
+  .wrapHeader .headerLogInMenu li > .headerMenuLogInBtn,
+  .wrapHeader .headerLogInMenu .headerMenuSignInBtn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    outline: none;
+    border: 0;
+    background: transparent;
+    font-family: "Lato", AdobeInvisFont, MyriadPro-Regular;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .wrapHeader .headerBurgerMenuBtn {
+    position: static;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1600px) {
+  .wrapHeader {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    max-width: 1600px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .wrapHeader .headerLogoContainer {
+    width: 68px;
+    margin: 21px 209px;
+  }
+  .wrapHeader .headerLogoContainer .headerLogo {
+    width: 100%;
+  }
+  .wrapHeader .headerLogInMenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-right: 14rem;
+  }
+  .wrapHeader .headerLogInMenu li > .headerMenuLogInBtn,
+  .wrapHeader .headerLogInMenu .headerMenuSignInBtn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    outline: none;
+    border: 0;
+    background: transparent;
+    font-family: "Lato", AdobeInvisFont, MyriadPro-Regular;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .wrapHeader .headerBurgerMenuBtn {
+    position: static;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .wrapHeader {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    max-width: 1200px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .wrapHeader .headerLogoContainer {
+    width: 68px;
+    margin: 21px 209px;
+  }
+  .wrapHeader .headerLogoContainer .headerLogo {
+    width: 100%;
+  }
+  .wrapHeader .headerLogInMenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-right: 14rem;
+  }
+  .wrapHeader .headerLogInMenu li > .headerMenuLogInBtn,
+  .wrapHeader .headerLogInMenu .headerMenuSignInBtn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    outline: none;
+    border: 0;
+    background: transparent;
+    font-family: "Lato", AdobeInvisFont, MyriadPro-Regular;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .wrapHeader .headerBurgerMenuBtn {
+    position: static;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .headerLogInMenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 1rem;
+  }
+  .headerLogInMenu li > .headerMenuLogInBtn,
+  .headerLogInMenu .headerMenuSignInBtn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    outline: none;
+    border: 0;
+    background: transparent;
+    font-family: "Lato", AdobeInvisFont, MyriadPro-Regular;
+    color: #f69679;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .headerLogInMenu .headerBurgerMenuBtn {
+    position: fixed;
+    top: 40px;
+    right: 40px;
+  }
+  .headerLogInMenu .headerBurgerMenuBtnSpan,
+  .headerLogInMenu .headerBurgerMenuBtnSpan::before,
+  .headerLogInMenu .headerBurgerMenuBtnSpan::after {
+    position: absolute;
+    width: 14px;
+    height: 3px;
+    background-color: #f69679;
+  }
+}
+
+@media (max-width: 767px) {
+  .headerLogInMenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 1rem;
+  }
+  .headerLogInMenu li > .headerMenuLogInBtn,
+  .headerLogInMenu .headerMenuSignInBtn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    outline: none;
+    border: 0;
+    background: transparent;
+    font-family: "Lato", AdobeInvisFont, MyriadPro-Regular;
+    color: #f69679;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .headerLogInMenu .headerBurgerMenuBtn {
+    position: fixed;
+    top: 40px;
+    right: 40px;
+  }
+  .headerLogInMenu .headerBurgerMenuBtnSpan,
+  .headerLogInMenu .headerBurgerMenuBtnSpan::before,
+  .headerLogInMenu .headerBurgerMenuBtnSpan::after {
+    position: absolute;
+    width: 14px;
+    height: 3px;
+    background-color: #f69679;
+  }
+}
+/*# sourceMappingURL=header.css.map */
