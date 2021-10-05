@@ -54,7 +54,7 @@ const arrImages = [
     num: "174",
   },
   {
-    src: "../../img/cuisines/sushi.png",
+    src: "./img/cuisines/sushi.png",
     alt: "sushi.png",
     theNameOfCuisines: "SUSHI",
     num: "237",
