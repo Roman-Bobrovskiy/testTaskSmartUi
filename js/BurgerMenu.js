@@ -4,7 +4,7 @@ let burgerMenuCloseBtn = document.querySelector(".burgerMenuCloseBtn");
 
 let handleMenyBtn = () => {
   burgerMenu.style.right = "-50px"; //show window
-  burgerMenuBtn.style.display = "none"; //hide burger btn
+  burgerMenuBtn.style.opacity = "0"; //hide burger btn
   burgerMenuCloseBtn.addEventListener("click", closeBurregMenu); //Listen close btn for close
   window.addEventListener("keydown", (event) => {
     //Listen esc for close
@@ -16,7 +16,7 @@ let handleMenyBtn = () => {
 
 let closeBurregMenu = () => {
   burgerMenu.style.right = "-300px"; //hide window
-  burgerMenuBtn.style.display = "flex"; //show burger btn
+  burgerMenuBtn.style.opacity = "100"; //show burger btn
   burgerMenuCloseBtn.removeEventListener("click", closeBurregMenu); //remove close btn listener
   window.removeEventListener("keydown", (event) => {
     // remove esc listener
