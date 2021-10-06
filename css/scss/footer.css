@@ -29,9 +29,9 @@
 }
 
 .wrapFooter .footerTextDesign .footerTextDesignSpan {
-  font-weight: 400;
+  font-weight: 600;
   color: black;
-  letter-spacing: 5px;
+  letter-spacing: 10px;
 }
 
 @media (max-width: 767px) {

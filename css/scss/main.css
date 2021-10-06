@@ -56,11 +56,10 @@
 }
 
 .wrapMain .mainGetStarted .mainGetStartedContainer .getStartedBtn {
-  border: 0;
-  background: #f69679;
+  border: 2px solid white;
+  background: transparent;
   width: 9rem;
   height: 2.75rem;
-  border-radius: 3px;
   margin: 0 auto;
   font-family: "Lato", AdobeInvisFont, MyriadPro-Regular;
   font-size: 0.9rem;
@@ -415,8 +414,7 @@
   .wrapMain .mainGetStarted .mainGetStartedContainer .getStartedBtn {
     width: 280px;
     height: 68px;
-    border-radius: 3px;
-    font-size: 28px;
+    font-size: 25px;
     margin-bottom: 40px;
   }
   .wrapMain .mainGetStarted .mainGetStartedContainer .getStartedTextSendRecipes {

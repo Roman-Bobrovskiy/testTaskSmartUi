@@ -35,11 +35,11 @@ $font_TimesNewRoman: "TimesNewRoman", PS-BoldItalicMT, AdobeInvisFont,
         }
       }
       .getStartedBtn {
-        border: 0;
-        background: #f69679;
+        border: 2px solid white;
+        // background: #f69679;
+        background: transparent;
         width: 9rem;
         height: 2.75rem;
-        border-radius: 3px;
         margin: 0 auto;
         font-family: $font_Lato;
         font-size: 0.9rem;
@@ -318,8 +318,7 @@ $font_TimesNewRoman: "TimesNewRoman", PS-BoldItalicMT, AdobeInvisFont,
         .getStartedBtn {
           width: 280px;
           height: 68px;
-          border-radius: 3px;
-          font-size: 28px;
+          font-size: 25px;
           margin-bottom: 40px;
         }
         .getStartedTextSendRecipes {

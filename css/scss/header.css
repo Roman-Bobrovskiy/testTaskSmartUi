@@ -179,7 +179,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 20%;
+  width: 70%;
   margin: 0 auto;
   text-align: center;
 }
@@ -264,7 +264,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 20%;
+  width: 70%;
   margin: 0 auto;
   text-align: center;
 }
@@ -345,6 +345,12 @@
   .wrapHeader .headerBurgerMenuBtn {
     position: static;
   }
+  .modalLogIn .inputContainer {
+    width: 20%;
+  }
+  .modalSignIn .inputContainer {
+    width: 20%;
+  }
 }
 
 @media (min-width: 1200px) and (max-width: 1600px) {
@@ -408,6 +414,12 @@
   .wrapHeader .headerBurgerMenuBtn {
     position: static;
   }
+  .modalLogIn .inputContainer {
+    width: 20%;
+  }
+  .modalSignIn .inputContainer {
+    width: 20%;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -465,6 +477,12 @@
   .wrapHeader .headerBurgerMenuBtn {
     position: static;
   }
+  .modalLogIn .inputContainer {
+    width: 20%;
+  }
+  .modalSignIn .inputContainer {
+    width: 20%;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -512,6 +530,12 @@
     width: 14px;
     height: 3px;
     background-color: #f69679;
+  }
+  .modalLogIn .inputContainer {
+    width: 20%;
+  }
+  .modalSignIn .inputContainer {
+    width: 20%;
   }
 }
 
