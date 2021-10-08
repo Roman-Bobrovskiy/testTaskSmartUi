@@ -171,11 +171,11 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
+  max-width: 100%;
 }
 
 .wrapMain .mainIntroducing .mainIntroducingImgContainer {
-  width: 50%;
+  max-width: 50%;
 }
 
 .wrapMain .mainIntroducing .mainIntroducingImgContainer .ihponeImg {
@@ -183,7 +183,7 @@
 }
 
 .wrapMain .mainIntroducing .mainIntroducingAside {
-  width: 50%;
+  max-width: 50%;
   margin: 180px auto;
 }
 
@@ -396,7 +396,7 @@
 
 @media (min-width: 1600px) {
   .wrapMain {
-    width: 1600px;
+    max-width: 1600px;
   }
   .wrapMain .mainGetStarted {
     width: 100%;
@@ -446,18 +446,18 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 100%;
+    max-width: 100%;
   }
   .mainIntroducing .mainIntroducingImgContainer {
     margin: 100px 0 0 200px;
-    width: 50%;
+    max-width: 50%;
     display: block;
   }
   .mainIntroducing .mainIntroducingAside {
     margin: 180px auto;
   }
   .mainIntroducing .mainIntroducingAside .introducingAsideTextContainer {
-    width: 540px;
+    max-width: 540px;
     margin-bottom: 29px;
   }
   .wrapCuisinesCounter {
@@ -488,7 +488,6 @@
   .wrapMain .mainGetStarted .mainGetStartedContainer .getStartedBtn {
     width: 280px;
     height: 68px;
-    border-radius: 3px;
     font-size: 28px;
     margin-bottom: 40px;
   }
@@ -523,7 +522,7 @@
     margin: 50px 0 0 100px;
   }
   .introducingAsideTextContainer {
-    width: 540px;
+    width: 90%;
   }
   .wrapCuisinesCounter {
     -webkit-box-orient: horizontal !important;

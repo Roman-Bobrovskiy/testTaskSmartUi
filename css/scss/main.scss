@@ -133,15 +133,15 @@ $font_TimesNewRoman: "TimesNewRoman", PS-BoldItalicMT, AdobeInvisFont,
   .mainIntroducing {
     background-color: #f7f7f7;
     display: flex;
-    width: 100%;
+    max-width: 100%;
     .mainIntroducingImgContainer {
-      width: 50%;
+      max-width: 50%;
       .ihponeImg {
         height: 100%;
       }
     }
     .mainIntroducingAside {
-      width: 50%;
+      max-width: 50%;
       margin: 180px auto;
       .introducingAsideHeading {
         font-family: $font_Lato;
@@ -251,7 +251,6 @@ $font_TimesNewRoman: "TimesNewRoman", PS-BoldItalicMT, AdobeInvisFont,
         flex-direction: column;
         align-items: center;
         text-decoration: none;
-
         .cuisinesGalleryItemsNumber {
           color: white;
           font-family: $font_TimesNewRoman;
@@ -303,7 +302,7 @@ $font_TimesNewRoman: "TimesNewRoman", PS-BoldItalicMT, AdobeInvisFont,
 
 @media (min-width: 1600px) {
   .wrapMain {
-    width: 1600px;
+    max-width: 1600px;
     .mainGetStarted {
       width: 100%;
       height: 880px;
@@ -352,16 +351,16 @@ $font_TimesNewRoman: "TimesNewRoman", PS-BoldItalicMT, AdobeInvisFont,
   .mainIntroducing {
     background-color: #f7f7f7;
     display: flex;
-    width: 100%;
+    max-width: 100%;
     .mainIntroducingImgContainer {
       margin: 100px 0 0 200px;
-      width: 50%;
+      max-width: 50%;
       display: block;
     }
     .mainIntroducingAside {
       margin: 180px auto;
       .introducingAsideTextContainer {
-        width: 540px;
+        max-width: 540px;
         margin-bottom: 29px;
       }
     }
@@ -393,7 +392,6 @@ $font_TimesNewRoman: "TimesNewRoman", PS-BoldItalicMT, AdobeInvisFont,
         .getStartedBtn {
           width: 280px;
           height: 68px;
-          border-radius: 3px;
           font-size: 28px;
           margin-bottom: 40px;
         }
@@ -433,7 +431,7 @@ $font_TimesNewRoman: "TimesNewRoman", PS-BoldItalicMT, AdobeInvisFont,
     margin: 50px 0 0 100px;
   }
   .introducingAsideTextContainer {
-    width: 540px;
+    width: 90%;
   }
 
   //section mainCuisines (min-width: 1200px) and (max-width: 1600px)====================================

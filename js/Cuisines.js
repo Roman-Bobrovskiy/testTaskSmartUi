@@ -1,7 +1,7 @@
 const arrImages = [
   {
     num: "1437",
-    src: "./img/cuisines/american.png",
+    src: "../assets/images/cuisines/american.png",
     alt: "american.png",
     theNameOfCuisines: "AMERICAN",
   },

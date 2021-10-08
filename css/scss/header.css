@@ -30,6 +30,11 @@
   width: 6rem;
 }
 
+.wrapHeader .headerLogInMenu > li > button:focus-visible {
+  border: 1px solid black;
+  outline: 1px solid white;
+}
+
 .wrapHeader .headerBurgerMenuBtn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -50,11 +55,6 @@
   cursor: pointer;
   background-color: transparent;
   overflow: hidden;
-}
-
-.wrapHeader .headerBurgerMenuBtn:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
 }
 
 .wrapHeader .headerBurgerMenuBtnSpan,
@@ -106,6 +106,11 @@
           transform: scale(0.8);
 }
 
+.wrapHeader .burgerMenu .burgerMenuCloseBtn:focus-visible {
+  border: 1px solid black;
+  outline: 1px solid white;
+}
+
 .wrapHeader .burgerMenu .burgerMenuItems {
   margin: 1rem auto;
 }
@@ -119,16 +124,6 @@
 
 .wrapHeader .burgerMenu .burgerMenuItems > a:hover {
   text-shadow: 0px 0px 3px #ffffff;
-}
-
-.menuCancelBtn {
-  outline: none;
-  border: 0;
-  background: url(../../img/Cancel_Icon.svg) center center no-repeat;
-  width: 32px;
-  height: 32px;
-  cursor: pointer;
-  margin: 2rem;
 }
 
 .modalLogIn {
@@ -145,10 +140,14 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   color: white;
   font-family: "Lato", AdobeInvisFont, MyriadPro-Regular;
   font-size: 14px;
   text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .modalLogIn .backdrop {
@@ -161,42 +160,74 @@
   z-index: -100;
 }
 
+.modalLogIn .menuCancelBtn {
+  outline: none;
+  border: 0;
+  background: url(../../img/Cancel_Icon.svg) center center no-repeat;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  margin: 1rem;
+  position: absolute;
+  top: 0.5rem;
+}
+
+.modalLogIn .menuCancelBtn:focus-visible {
+  border: 1px solid black;
+  outline: 1px solid white;
+}
+
 .modalLogIn .logInMenuLogoContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 50%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 3rem;
+  margin: 4rem 0 2rem 0;
 }
 
 .modalLogIn .inputContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 70%;
   margin: 0 auto;
   text-align: center;
 }
 
+.modalLogIn .inputContainer .input {
+  width: 70%;
+}
+
 .modalLogIn .inputContainer .logInMenuInput {
-  margin: 0.5rem;
+  margin: 0.5rem auto;
 }
 
 .modalLogIn .inputContainer .menuSubmitLoginBtn {
   outline: none;
+  width: 5rem;
   border: 0;
   background: transparent;
   color: white;
   font-family: "Lato", AdobeInvisFont, MyriadPro-Regular;
   font-size: 20px;
   cursor: pointer;
-  margin-bottom: 1rem;
+  margin: 1rem auto;
+}
+
+.modalLogIn .inputContainer .menuSubmitLoginBtn:focus-visible {
+  border: 1px solid black;
+  outline: 1px solid white;
+}
+
+.modalLogIn .inputContainer .psw {
+  margin-bottom: 4rem;
 }
 
 .modalLogIn .inputContainer .psw > a {
@@ -212,17 +243,18 @@
   width: 32px;
   height: 32px;
   cursor: pointer;
-  margin: 2rem;
+  margin: 1rem;
+  position: absolute;
+  top: 0.5rem;
 }
 
 .modalSignIn {
-  display: none;
   display: none;
   position: absolute;
   width: 50%;
   left: 25%;
   top: 25%;
-  z-index: 1000;
+  z-index: 10000;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -230,10 +262,14 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   color: white;
   font-family: "Lato", AdobeInvisFont, MyriadPro-Regular;
   font-size: 14px;
   text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .modalSignIn .backdropSignIn {
@@ -243,7 +279,7 @@
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.7);
-  z-index: -100;
+  z-index: -100000;
 }
 
 .modalSignIn .signMenuLogoContainer {
@@ -253,35 +289,49 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 3rem;
+  margin: 4rem 0 2rem 0;
 }
 
 .modalSignIn .inputContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 70%;
   margin: 0 auto;
   text-align: center;
 }
 
+.modalSignIn .inputContainer .input {
+  width: 70%;
+}
+
 .modalSignIn .inputContainer .signInMenuInput {
-  margin: 0.5rem;
+  margin: 0.5rem auto;
 }
 
 .modalSignIn .inputContainer .headerMenuSignInBtn {
   outline: none;
+  width: 5rem;
   border: 0;
   background: transparent;
   color: white;
   font-family: "Lato", AdobeInvisFont, MyriadPro-Regular;
   font-size: 20px;
   cursor: pointer;
-  margin-bottom: 1rem;
+  margin: 1rem auto;
+}
+
+.modalSignIn .inputContainer .headerMenuSignInBtn:focus-visible {
+  border: 1px solid black;
+  outline: 1px solid white;
+}
+
+.modalSignIn .inputContainer .psw {
+  margin-bottom: 4rem;
 }
 
 .modalSignIn .inputContainer .psw > a {
@@ -296,7 +346,7 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    width: 1600px;
+    max-width: 1600px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -346,9 +396,15 @@
     position: static;
   }
   .modalLogIn .inputContainer {
+    width: 100%;
+  }
+  .modalLogIn .inputContainer .input {
     width: 20%;
   }
   .modalSignIn .inputContainer {
+    width: 100%;
+  }
+  .modalSignIn .inputContainer .input {
     width: 20%;
   }
 }
@@ -415,10 +471,16 @@
     position: static;
   }
   .modalLogIn .inputContainer {
-    width: 20%;
+    width: 100%;
+  }
+  .modalLogIn .inputContainer .input {
+    width: 30%;
   }
   .modalSignIn .inputContainer {
-    width: 20%;
+    width: 100%;
+  }
+  .modalSignIn .inputContainer .input {
+    width: 30%;
   }
 }
 
@@ -478,10 +540,16 @@
     position: static;
   }
   .modalLogIn .inputContainer {
-    width: 20%;
+    width: 100%;
+  }
+  .modalLogIn .inputContainer .input {
+    width: 30%;
   }
   .modalSignIn .inputContainer {
-    width: 20%;
+    width: 100%;
+  }
+  .modalSignIn .inputContainer .input {
+    width: 30%;
   }
 }
 
@@ -532,10 +600,16 @@
     background-color: #f69679;
   }
   .modalLogIn .inputContainer {
-    width: 20%;
+    width: 100%;
+  }
+  .modalLogIn .inputContainer .input {
+    width: 30%;
   }
   .modalSignIn .inputContainer {
-    width: 20%;
+    width: 100%;
+  }
+  .modalSignIn .inputContainer .input {
+    width: 30%;
   }
 }
 
